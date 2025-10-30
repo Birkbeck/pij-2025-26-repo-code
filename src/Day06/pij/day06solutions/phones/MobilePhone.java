@@ -35,6 +35,12 @@ public class MobilePhone extends OldPhone {
         lastCalledNumbers = new String[NUMBER_MEMORY_SIZE];
     }
 
+    /**
+     * Makes phone call and additionally records number in this MobilePhone's
+     * call log.
+     *
+     * @param number the number to call
+     */
     @Override
     public void call(String number) {
         super.call(number);

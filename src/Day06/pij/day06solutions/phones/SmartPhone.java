@@ -24,6 +24,25 @@ public class SmartPhone extends MobilePhone {
     }
 
     /**
+     * Makes cheaper calls to international numbers via the internet. Does not
+     * record the numbers of international calls in the call log.
+     *
+     * @param number the number to call
+     */
+    @Override
+    public void call(String number) {
+        final String INTERNATIONAL_PREFIX = "00";
+        if (number.startsWith(INTERNATIONAL_PREFIX)) {
+            // Note: this approach avoids the fees for the international call,
+            // but it does not record the number among the most recently called
+            // numbers (which may or may not be intended)
+            System.out.println("Calling " + number + " through the internet to save money");
+        } else {
+            super.call(number);
+        }
+    }
+
+    /**
      * Visits a web address.
      *
      * @param address the web address to visit
