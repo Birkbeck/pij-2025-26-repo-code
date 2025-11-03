@@ -7,6 +7,11 @@ import java.util.List;
 
 public class DataUtils {
 
+    /**
+     * Useful for Day 9, Exercise 1
+     *
+     * @return a list of programming languages
+     */
     public static List<String> getProgrammingLanguages() {
         return List.of("Java", "C", "PHP", "JavaScript", "Python", "Rust", "Haskell", "Go", "Prolog");
     }
