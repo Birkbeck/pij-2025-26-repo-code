@@ -7,6 +7,11 @@ import java.util.List;
 
 public class DataUtils {
 
+    public static List<String> getProgrammingLanguages() {
+        return List.of("Java", "C", "PHP", "JavaScript", "Python", "Rust", "Haskell", "Go", "Prolog");
+    }
+
+
     public static List<String> getCities(){
         return new ArrayList<>(Arrays.asList("London", "Cardiff", "Rome", "Birmingham", "Glasgow",
                 "Belfast", "Dublin", "Madrid", "Oslo", "Warsaw", "Moscow", "Stockholm", "Bonn", "Berlin", "Paris",
