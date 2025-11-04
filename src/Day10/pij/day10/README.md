@@ -1,4 +1,4 @@
-# Day 10 repo caode
+# Day 10 repo code
 
 The following directories relate to
 
