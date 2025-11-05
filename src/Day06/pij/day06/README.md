@@ -5,6 +5,7 @@ The following directories relate to
 ## Reading Material
 
 + accounts
++ eBooks
 + greeterDemo
 + point
 
