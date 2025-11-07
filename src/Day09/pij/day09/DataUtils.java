@@ -29,23 +29,4 @@ public class DataUtils {
         "Tan", "Stan", "George", "Jerry", "Gustav", "Wendy", "Zoe", "Dan", "Doc", "Po", "Daz", "Cat", "ezzy", "Pru"};
     }
 
-
-
-    public static boolean isFirstLetterE(java.lang.String s){
-        return switch (s.charAt(0)){
-            case 'e', 'E' -> true;
-            default -> false;
-        };
-
-    }
-
-    public static <String> int eSort(String s1, String s2) {
-        if ((isFirstLetterE((java.lang.String) s1) && isFirstLetterE((java.lang.String) s2)) || (!isFirstLetterE((java.lang.String) s1) && !isFirstLetterE((java.lang.String) s2) ) ){
-            return 0;
-        } else if ((isFirstLetterE((java.lang.String) s1) && !isFirstLetterE((java.lang.String) s2))){
-            return -1;
-        }else{
-            return 1;
-        }
-    }
 }
