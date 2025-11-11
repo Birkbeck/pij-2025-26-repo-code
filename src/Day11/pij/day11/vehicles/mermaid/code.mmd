@@ -1,0 +1,86 @@
+---
+title: Modelling Vechicles
+---
+classDiagram 
+
+
+class Vechicle{
+    String ownerName
+}
+<<abstract>> Vechicle
+Vechicle <|-- Bicycle
+Vechicle <|-- AbstractMotorVechile
+
+
+class AbstractMotorVechile {
+    abstract double computeKW()
+}
+<<abstract>> AbstractMotorVechile
+AbstractMotorVechile <|-- Car
+AbstractMotorVechile <|-- CrewTransporter
+
+
+class Bicycle{
+    double tyreInches
+}
+
+
+Bicycle <|-- CycleRickshaw
+
+
+class CycleRickshaw {
+    int maxKG
+}
+CycleRickshaw ..|> HasFarePassenger
+
+
+class HasPassenger{
+    int getPassengerCount()
+}
+<<interface>> HasPassenger
+HasPassenger <|-- HasFarePassenger
+
+class HasFarePassenger{
+    double computeFare(String dest)
+}
+<<interface>> HasFarePassenger
+
+
+class Car{
+    double ComputeKW()
+}
+
+
+class Taxi{
+    int maxPassenger
+}
+Car <|-- Taxi
+Taxi ..|> HasFarePassenger
+
+
+class PoliceCar{
+    int numberOfBlueLights
+}
+Car <|-- PoliceCar
+PoliceCar ..|> HasSpecialRights
+
+
+class CrewTransporter{
+    int Seats 
+    double computeKW
+}
+CrewTransporter ..|> HasSpecialRights
+CrewTransporter ..|> HasPassenger
+
+
+class HasSpecialRights{
+    void toggleSpecialRights()
+}
+<<interface>> HasSpecialRights
+
+
+class Tyre{
+    int size
+}
+Tyre "4"--* Car
+Tyre "2"--* Bicycle
