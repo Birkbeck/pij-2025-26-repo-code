@@ -1,4 +1,4 @@
-package pij.day13.permutations;
+package pij.day13solutions.permutations;
 
 import java.util.ArrayList;
 import java.util.Collections;
