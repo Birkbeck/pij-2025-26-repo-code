@@ -11,7 +11,7 @@ public class Day02Exercise10 {
         boolean isPalindrome = true;
 
         // idea for the check:
-        // - "ABBA" is a palindrom because the first letter (at index 0) and
+        // - "ABBA" is a palindrome because the first letter (at index 0) and
         // the last letter (at index 3 == length() - 1) are the same and
         // the second letter (at index 1) and the second-to-last letter
         // (at index 2 == length() - 2) are the same. We can stop incrementing
