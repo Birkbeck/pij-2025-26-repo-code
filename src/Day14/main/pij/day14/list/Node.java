@@ -252,6 +252,7 @@ class Node<E> {
 
     /**
      * "Factory method" to create a new Node with a self-loop.
+     * (Added for Exercise 1.)
      *
      * @return a new Node with null as data and with itself as the next Node
      * @param <E> the generic type of the data stored in the returned Node

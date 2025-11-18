@@ -45,6 +45,18 @@ class TreeNode<E> {
     }
 
     /**
+     * Initialises a new TreeNode<E> with given data and a single reference
+     * that will be used both for the left subtree and for the right subtree.
+     * (Constructor added for Exercise 2.)
+     *
+     * @param data reference to the data object to store in this TreeNode<E>
+     * @param leftAndRightChild reference to the left *and* the right subtree
+     */
+    public TreeNode(E data, TreeNode<E> leftAndRightChild) {
+        this(data, leftAndRightChild, leftAndRightChild);
+    }
+
+    /**
      * Prints this TreeNode<E> and its subtrees on the screen using
      * recursive pre-order traversal.
      */
