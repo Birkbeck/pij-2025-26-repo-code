@@ -20,5 +20,8 @@ public class EmployeeDriver {
 
         System.out.println("Celia answers, recursively: " + celia.getCEORecursively());
         System.out.println("Celia answers, iteratively: " + celia.getCEOIteratively());
+
+        System.out.println("Show Barry's managers:");
+        System.out.println(EmployeeUtils.getEmployeeTreeStructure(barry)
     }
 }
