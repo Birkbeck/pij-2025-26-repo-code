@@ -10,6 +10,26 @@ import java.util.List;
  */
 public class SimpleLinkedList<E> implements SimpleList<E> {
 
+    public SimpleLinkedList(List<? extends E> copyMe) {
+        // TODO
+    }
+
+    public SimpleLinkedList(SimpleList<? extends E> copyMe) {
+        // TODO
+    }
+
+
+    public SimpleLinkedList(SimpleLinkedList<? extends E> copyMe) {
+        // TODO
+    }
+
+    /**
+     * This constructor initialises an empty list.
+     */
+    public SimpleLinkedList() {
+        // TODO
+    }
+
     /**
      * The first element of the list. If it is null, this means that the list
      * is currently empty.
