@@ -72,6 +72,14 @@ public class Employee {
         return boss;
     }
 
+     /**
+     * Returns the name of this Employee.
+     * @return the name of this Employee
+     */
+    public String getName(){
+        return this.name;
+    }
+
     @Override
     public String toString() {
         if (this.lineManager == null) {
