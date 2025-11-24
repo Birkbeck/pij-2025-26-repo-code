@@ -10,15 +10,43 @@ import java.util.List;
  */
 public class SimpleLinkedList<E> implements SimpleList<E> {
 
+    /**
+     * The first element of the list. If it is null, this means that the list
+     * is currently empty.
+     */
+    private Node<E> head;
+
+    /**
+     * Constructs a SimpleLinkedList containing the elements of the specified
+     * list, in the order they are returned by the list's iterator.
+     *
+     * @param copyMe contains the elements that are to be copied to this list
+     * @throws NullPointerException if copyMe is null
+     */
     public SimpleLinkedList(List<? extends E> copyMe) {
         // TODO
     }
 
+    /**
+     * Constructs a SimpleLinkedList containing the elements of the specified
+     * SimpleList, in ascending order of the elements' indices in the
+     * SimpleList.
+     *
+     * @param copyMe contains the elements that are to be copied to this list
+     * @throws NullPointerException if copyMe is null
+     */
     public SimpleLinkedList(SimpleList<? extends E> copyMe) {
         // TODO
     }
 
-
+    /**
+     * Constructs a SimpleLinkedList containing the elements of the specified
+     * SimpleLinkedList, in ascending order of the elements' indices in the
+     * SimpleLinkedList.
+     *
+     * @param copyMe contains the elements that are to be copied to this list
+     * @throws NullPointerException if copyMe is null
+     */
     public SimpleLinkedList(SimpleLinkedList<? extends E> copyMe) {
         // TODO
     }
@@ -29,14 +57,6 @@ public class SimpleLinkedList<E> implements SimpleList<E> {
     public SimpleLinkedList() {
         // TODO
     }
-
-    /**
-     * The first element of the list. If it is null, this means that the list
-     * is currently empty.
-     */
-    private Node<E> head;
-
-    /* The default constructor is sufficient for our purposes: head will be null. */
 
     @Override
     public boolean isEmpty() {
