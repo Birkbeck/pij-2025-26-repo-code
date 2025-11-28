@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class StreamExample {
 
     public static void main(String[] args) {
-        var students = StudentUtils.getStudents();
+        List<Student> students = StudentUtils.getStudents();
 
         System.out.println("--- Students aged 21 or older ---");
         // Print names of students aged 21 or older
