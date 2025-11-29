@@ -73,6 +73,10 @@ public class MobilePhone extends OldPhone {
      * @param game the game to play
      */
     public void playGame(String game) {
+        // Ex 4: if we make the method private, we will have to provide a
+        // public implementation of playGame(String) in class SmartPhone
+        // so that the script still works. (We are allowed to increase
+        // visibility in subclasses!)
         System.out.println("Playing " + game + "...");
     }
 

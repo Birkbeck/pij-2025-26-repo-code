@@ -31,6 +31,7 @@ public class SmartPhone extends MobilePhone {
      */
     @Override
     public void call(String number) {
+        // Ex 6:
         final String INTERNATIONAL_PREFIX = "00";
         if (number.startsWith(INTERNATIONAL_PREFIX)) {
             // Note: this approach avoids the fees for the international call,
