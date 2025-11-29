@@ -6,9 +6,12 @@ import pij.day07.shape.Shape;
 /**
  * A ScreenShape represents the commonalities of Shapes for screen
  * display that their bounding box has a top left point representing
- * where the shape is on the screen.
+ * where the shape is on the screen (Ex 8).
  */
 public abstract class ScreenShape implements Shape {
+    // Ex 8: class ScreenShape does not need to implement the missing
+    // methods of interface Shape because it is an abstract class.
+
     private final Point topLeft;
 
     /**

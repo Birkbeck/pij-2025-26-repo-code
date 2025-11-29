@@ -3,7 +3,7 @@ package pij.day07solutions.shapesInheritance;
 import pij.day06.point.Point;
 
 /**
- * A ScreenRectangle is a ScreenShape with a width and a height.
+ * A ScreenRectangle is a ScreenShape with a width and a height (Ex 8).
  */
 public class ScreenRectangle extends ScreenShape {
     private final int width;

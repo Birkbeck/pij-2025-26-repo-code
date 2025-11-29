@@ -3,7 +3,7 @@ package pij.day07solutions.shapesInheritance;
 import pij.day06.point.Point;
 
 /**
- * A ScreenCircle is a ScreenShape corresponding to a circle.
+ * A ScreenCircle is a ScreenShape corresponding to a circle (Ex 8).
  */
 public class ScreenCircle extends ScreenShape {
     private final int radius;

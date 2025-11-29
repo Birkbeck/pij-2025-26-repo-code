@@ -3,7 +3,7 @@ package pij.day07solutions.shapesDelegation;
 import pij.day07.shape.Shape;
 
 /**
- * A Rectangle is a Shape defined by its width and its height.
+ * A Rectangle is a Shape defined by its width and its height (Ex 9).
  */
 public class Rectangle implements Shape {
     private final int width;

@@ -4,7 +4,7 @@ import pij.day07.shape.Shape;
 
 /**
  * A Circle is a Shape defined by a given radius. The radius induces
- * area and perimeter of a Circle in the usual way.
+ * area and perimeter of a Circle in the usual way (Ex 9).
  */
 public class Circle implements Shape {
     private final int radius;

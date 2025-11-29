@@ -5,7 +5,7 @@ import pij.day07.shape.Shape;
 
 /**
  * A ScreenShape represents a geometric shape at a given position on the
- * screen.
+ * screen (Ex 9).
  */
 public class ScreenShape implements Shape {
     private final Point topLeft;
