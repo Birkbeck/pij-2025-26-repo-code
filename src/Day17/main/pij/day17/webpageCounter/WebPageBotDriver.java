@@ -26,7 +26,7 @@ public class WebPageBotDriver {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
-                //Thread.currentThread().interrupt();
+                System.out.println("main thread was interrupted while sleeping!");
             }
 
             // Re-evaluate whether any bot threads are still alive

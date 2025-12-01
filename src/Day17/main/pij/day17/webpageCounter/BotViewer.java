@@ -8,10 +8,12 @@ import java.util.Random;
  */
 public class BotViewer implements Runnable {
 
+    private final String botName;
     private final WebCounter webCounter;
 
     // Private constructor to enforce the use of the static factory method
     private BotViewer(String botName, WebCounter webCounter) {
+        this.botName = botName;
         this.webCounter = webCounter;
     }
 
@@ -31,7 +33,8 @@ public class BotViewer implements Runnable {
                 Random r = new Random();
                 Thread.sleep(10 + r.nextInt(10));
             } catch (InterruptedException e) {
-                //Thread.currentThread().interrupt();
+                System.out.println("Bot " + botName +
+                        " was interrupted in its sleep!");
             }
         }
     }
