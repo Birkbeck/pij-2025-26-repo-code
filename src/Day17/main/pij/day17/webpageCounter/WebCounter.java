@@ -36,7 +36,7 @@ public class WebCounter {
      * Method to safely increment the view count using an explicit lock.
      * This method uses a synchronized block to ensure that only one thread can access the critical section
      */
-    public static void synchronizedUsingLockIncreasingViews(){
+    public void synchronizedUsingLockIncreasingViews(){
         synchronized (lock){
             views ++;
         }
