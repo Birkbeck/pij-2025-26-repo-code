@@ -10,6 +10,7 @@ package pij.day17.webpageCounter;
 public class WebCounter {
 
     private int views = 0;
+    private static final Object lock = new Object();
 
     public int getViews() {
         return views;
