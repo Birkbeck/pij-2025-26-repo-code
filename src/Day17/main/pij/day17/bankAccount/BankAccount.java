@@ -1,5 +1,6 @@
 package pij.day17.bankAccount;
 
+// Exercise 5.
 public class BankAccount {
     private int balanceInPence;
 

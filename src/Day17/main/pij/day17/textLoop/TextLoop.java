@@ -1,6 +1,6 @@
 package pij.day17.textLoop;
 
-// Exercise 1.
+// Exercise 2.
 public class TextLoop implements Runnable {
     public static final int ITERATIONS_PER_RUNNABLE = 10;
     public static final int NUMBER_OF_RUNNABLES = 10;
@@ -21,6 +21,7 @@ public class TextLoop implements Runnable {
     }
 
     public static void main(String[] args) {
+        //args = { MODE0 };
         if (args.length < 1 || (!args[0].equals(MODE0) && !args[0].equals(MODE1))) {
             System.out.println("USAGE: java TextLoop <mode>");
             System.out.println("     mode " + MODE0 + ": without threads");

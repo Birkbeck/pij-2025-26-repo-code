@@ -1,5 +1,6 @@
 package pij.day17.increaser;
 
+// Exercise 4.
 public class Increaser implements Runnable {
     private Counter counter;
 

@@ -1,5 +1,6 @@
 package pij.day17.increaser;
 
+// Exercise 4.
 public class Counter {
     private int n;
 
