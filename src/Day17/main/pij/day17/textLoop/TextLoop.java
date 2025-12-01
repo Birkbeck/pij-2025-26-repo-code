@@ -21,7 +21,7 @@ public class TextLoop implements Runnable {
     }
 
     public static void main(String[] args) {
-        //args = { MODE0 };
+        //args = new String[] { MODE0 };
         if (args.length < 1 || (!args[0].equals(MODE0) && !args[0].equals(MODE1))) {
             System.out.println("USAGE: java TextLoop <mode>");
             System.out.println("     mode " + MODE0 + ": without threads");
