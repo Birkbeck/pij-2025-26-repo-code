@@ -28,6 +28,9 @@ public class BotViewer implements Runnable {
             // but may have performance overhead
             //webCounter.synchronizedIncrementViews();
 
+            // Alternatively, use lock mechanism: which is also thread-safe and can be more efficient than synchronized methods in some scenarios
+            //WebCounter.synchronizedUsingLockIncreasingViews();
+
             // Simulate some delay between views
             try {
                 Random r = new Random();
