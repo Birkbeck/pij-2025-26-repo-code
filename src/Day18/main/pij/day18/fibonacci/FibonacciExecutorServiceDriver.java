@@ -52,10 +52,9 @@ public class FibonacciExecutorServiceDriver {
     /**
      * Puts the current thread to sleep for a given duration in milliseconds.
      *
-     * @param durationMillis the duration the thread is supposed to sleep
      * @throws IllegalArgumentException if durationMillis is negative
      */
-    private static void sleepABit(long durationMillis) {
+    private static void sleepABit() {
         try {
             Thread.sleep(SLEEP_MILLIS);
         } catch (InterruptedException e) {
@@ -87,7 +86,7 @@ public class FibonacciExecutorServiceDriver {
 
         // Two futures having an eye on their tasks concurrently.
         while ((! future1.isDone()) && (! future2.isDone())) {
-            sleepABit(SLEEP_MILLIS);
+            sleepABit();
             System.out.print(BOTH_RUNNING_SYMBOL);
         }
         // One of the Futures' tasks must be done!
@@ -115,7 +114,7 @@ public class FibonacciExecutorServiceDriver {
 
         // run the remaining task to the very end
         while (! stillRunningFuture.isDone()) {
-            sleepABit(SLEEP_MILLIS);
+            sleepABit();
             // use different symbol for the slower thread
             System.out.print(future1finished
                     ? SECOND_RUNNING_SYMBOL : FIRST_RUNNING_SYMBOL);
