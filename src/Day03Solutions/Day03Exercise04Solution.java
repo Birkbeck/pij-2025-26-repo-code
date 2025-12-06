@@ -1,15 +1,19 @@
 public class Day03Exercise04Solution {
 
     public static boolean isPrime(int input) {
+        if (input < 2) { // the smallest prime number is 2
+            return false;
+        }
         // idea: if input is not divisible by any of the integers
         // from 2 to input - 1, then it must be prime; try them all!
-        boolean primeRefuted = false;
-        for (int i = 2; i < input; i++) { // optimisation: !primeRefuted && i < input
+        for (int i = 2; i < input; i++) {
             if (input % i == 0) { // i is a divisor of input, so input is not prime
-                primeRefuted = true;
+                return false;
             }
         }
-        return !primeRefuted;
+        // there is no divisor for input between 2 and input - 1
+        // (both inclusive), so input is indeed prime
+        return true;
 
         // The method can be optimised further with "domain knowledge" from
         // mathematics: it suffices to check numbers up to Math.sqrt(input) + 1
