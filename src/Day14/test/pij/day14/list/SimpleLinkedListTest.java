@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class SimpleLinkedListTest {
 
@@ -44,6 +45,14 @@ class SimpleLinkedListTest {
     }
 
     @Test
+    void testConstructor_List_null() {
+        assertThrows(NullPointerException.class,
+                () ->  {
+                    List<Integer> l = null;
+                    SimpleList<Integer> simpleList = new SimpleLinkedList<>(l); });
+    }
+
+    @Test
     void testConstructor_SimpleList_zeroElements() {
         SimpleList<Integer> input = new SimpleLinkedList<>();
         SimpleList<Integer> actualSimpleList = new SimpleLinkedList<>(input);
@@ -79,4 +88,11 @@ class SimpleLinkedListTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void testConstructor_SimpleList_null() {
+        assertThrows(NullPointerException.class,
+                () ->  {
+                    SimpleList<Integer> l = null;
+                    SimpleList<Integer> simpleList = new SimpleLinkedList<>(l); });
+    }
 }
