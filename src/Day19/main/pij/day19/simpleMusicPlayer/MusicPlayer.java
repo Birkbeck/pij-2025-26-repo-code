@@ -3,7 +3,7 @@ package pij.day19.simpleMusicPlayer;
 import java.util.List;
 
 /**
- * Exercise 2.
+ * Exercise 3.
  * A simple music player that can play, pause, stop, and navigate through a
  * playlist of songs. The MusicPlayer class manages the playback state and
  * separates the model from the GUI.

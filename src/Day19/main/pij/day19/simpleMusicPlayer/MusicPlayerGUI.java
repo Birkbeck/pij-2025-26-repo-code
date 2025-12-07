@@ -11,7 +11,7 @@ import java.awt.Font;
 import java.util.List;
 
 /**
- * Exercise 2.
+ * Exercise 3.
  * A simple GUI for a music player with play, back, and next buttons.
  * The MusicPlayerGUI class provides a graphical interface to control the
  * MusicPlayer functionality.
