@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Minimal HTTP server to serve requests for cat facts. This class
@@ -25,10 +26,11 @@ public class CatFactServer {
         HttpServer httpServer = HttpServer.create(new InetSocketAddress(PORT),
                 BACKLOG);
         HttpHandler handler = exchange -> {
+            byte[] responseBytes = RESPONSE_BODY.getBytes(StandardCharsets.UTF_8);
             exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
-                    RESPONSE_BODY.length());
+                    responseBytes.length);
             try (OutputStream outputStream = exchange.getResponseBody()) {
-                outputStream.write(RESPONSE_BODY.getBytes());
+                outputStream.write(responseBytes);
             }
         };
         httpServer.createContext(PATH, handler);
