@@ -21,8 +21,8 @@ public class CatFactClient {
     public static void main(String[] args)
             throws URISyntaxException, IOException, InterruptedException {
         HttpRequest getRequest = HttpRequest.newBuilder()
-                //.uri(new URI("https://catfact.ninja/fact/"))
-                .uri(new URI("http://localhost:8001/fact/"))
+                .uri(new URI("https://catfact.ninja/fact/"))
+                //.uri(new URI("http://localhost:8001/fact/"))
                 .GET()
                 .build();
         HttpResponse<String> response;
