@@ -8,6 +8,7 @@ The following directories relate to
 + loginGenerator
 + selfMadeExceptions
 + textFileIO
++ pathFinder
 
 ## Worksheet 
 
