@@ -4,6 +4,9 @@ package pij.day13solutions.fibonacciLoop;
 // For the recursive version, please see pij.day13.fibonacci.Fibonacci.
 public class FibLoop {
     public static long fibIterative(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Illegal negative value " + n);
+        }
         if (n == 0 || n == 1) {
             return n;
         }

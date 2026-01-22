@@ -23,6 +23,8 @@ public class BinarySearch {
      *  or sortedList contains null
      */
     public static <E extends Comparable<? super E>> boolean find(List<? extends E> sortedList, E value) {
+        // print statement added to illustrate the inner workings of the
+        // method; should not be present like that in production code
         System.out.println("Call on: " + sortedList);
         if (sortedList.isEmpty()) {
             // the empty list does not contain anything
