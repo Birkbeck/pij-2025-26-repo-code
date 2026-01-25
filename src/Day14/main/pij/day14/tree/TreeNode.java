@@ -6,12 +6,12 @@ import java.util.LinkedList;
 /**
  * A node for a generic binary tree with a data element and
  * two pointers to the left and right child node. Class has
- * package-private visibility to indicate that it is solely
- * for internal use in the package.
+ * public visibility as it is exposed by a public constructor
+ * of class Tree.
  *
  * @param <E> the type of elements in the node
  */
-class TreeNode<E> {
+public class TreeNode<E> {
     /** The data object stored in this TreeNode<E>. May be null. */
     private E data;
 
