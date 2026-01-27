@@ -84,6 +84,21 @@ public interface SimpleList<E> {
     void add(int index, E element);
 
     /**
+     * Adds the given element at the end of the list.
+     *<p>
+     * Implementation note: the current default implementation of the method
+     * calls the size() method to determine the position where the element
+     * should be added by the two-parameter add(int, E) method. Depending
+     * on the chosen implementation of the class, it may be worth overriding
+     * this method with a more efficient implementation.
+     *
+     * @param element the element to add at the end of this SimpleList
+     */
+    default void add(E element) {
+        add(size(), element);
+    }
+
+    /**
      * Removes and returns the element at the given position from this
      * SimpleList.  The position of all list contents previously at a
      * position higher than index is shifted to the left by one.
