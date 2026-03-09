@@ -113,7 +113,7 @@ public class PizzaClientGUI {
         // pizzaBox.getSelectedItem() would be the more obvious choice, but
         // returns only an Object reference rather than a String reference
         String pizza = pizzaBox.getItemAt(pizzaBox.getSelectedIndex());
-        String size = sizeBox.getItemAt(pizzaBox.getSelectedIndex());
+        String size = sizeBox.getItemAt(sizeBox.getSelectedIndex());
 
         //if pizza is null or empty, it means the server is not available or no pizzas were returned.
         // We can show an error message to the user.
